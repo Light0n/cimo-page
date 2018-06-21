@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./imgs/cimo-icon.jpg">
+	<script src="./project.js" defer></script>
+	<title>CIMO | Consign</title>
+</head>
+
+<body>
+    <header>
+				<a href="./home.html" id="logo"></a>
+				<nav id="navbar">
+						  <a href="#" id="menu-icon"></a>
+				  <ul>
+					<li><a href="./home.html">Home</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li class="submenu"><a href="./products.html">Products</a>
+					  <div class="submenu-content">
+									  <a href="./products.html#clothing-heading">Clothing</a>
+									  <a href="./products.html#bags-heading">Handbags</a>
+									  <a href="./products.html#shoes-heading">Shoes</a>
+									  <a href="./products.html#cosmetics-heading">Cosmestics</a>
+								  </div>
+					</li>
+          <li><a href="./consign.html">Consign</a></li>
+          <li><a href="./changes.html"> Changes</a></li>
+          <li><a href="./order_form.html" id="nav-bag"> <img src="./imgs/cart-icon.png" alt=""><sup>0</sup></a></li>
+          <li><a href="./history.html"> Transactions</a></li>
+				  </ul>
+				</nav>
+        </header>
+    <main class="products">
+		<!-- Clothing -->
+      <h1 id="clothing-heading" class="product-heading"> Clothing</h1>
+      <section id="clothing" class="grid-product-cards">
+        <figure class="first">
+          <img src="./imgs/products/clo-1.jpg" alt="">
+          <div>Red shirt | Size M</div>
+          <figcaption>$13.83<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-2.jpg" alt="">
+          <div>Yellow shirt & skirt | Size S</div>
+          <figcaption>$23.48 <button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-3.jpg" alt="">
+          <div>Red shirt & skirt | Size M</div>
+          <figcaption>$18.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-4.jpg" alt="">
+          <div>Red dress | Size L</div>
+          <figcaption>$33.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-5.jpg" alt="">
+          <div>White shirt & brown skirt | Size S</div>
+          <figcaption>$43.28<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-6.jpg" alt="">
+          <div>Green T-shirt & mini-skirt | Size M</div>
+          <figcaption>$37.28<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-7.jpg" alt="">
+          <div>Brown dress | Size M</div>
+          <figcaption>$39.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-8.jpg" alt="">
+          <div>Red dress with flower | Size L</div>
+          <figcaption>$23.68<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-9.jpg" alt="">
+          <div>Grey dress with words | Size XL</div>
+          <figcaption>$19.38<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-10.jpg" alt="">
+          <div>Black dress 1 | Size M</div>
+          <figcaption>$39.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure class="first">
+          <img src="./imgs/products/clo-11.jpg" alt="">
+          <div>Black dress 2 | Size L</div>
+          <figcaption>$46.58 <button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-12.jpg" alt="">
+          <div>Black dress 3 | Size L</div>
+          <figcaption>$23.48<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-13.jpg" alt="">
+          <div>Black dress 4 | Size S</div>
+          <figcaption>$18.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-14.jpg" alt="">
+          <div>Black jeans, dark red T-shirt and large white coat</div>
+          <figcaption>$30.58<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-15.jpg" alt="">
+          <div>White T-shirt with dark blue trouser | Size M</div>
+          <figcaption>$26.79<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-16.jpg" alt="">
+          <div>Black dress with text | Size L</div>
+          <figcaption>$17.79<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-17.jpg" alt="">
+          <div>Pink dress | Size S</div>
+          <figcaption>$23.72<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-18.jpg" alt="">
+          <div>Black dress 5 | Size M</div>
+          <figcaption>$34.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-19.jpg" alt="">
+          <div>Black jumpsuit | Size M</div>
+          <figcaption>$13.58<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-20.jpg" alt="">
+          <div>Black mini-dress | Size S</div>
+          <figcaption>$46.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure class="first">
+          <img src="./imgs/products/clo-21.jpg" alt="">
+          <div>Black dress 6 | Size L</div>
+          <figcaption>$13.83 <button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-22.jpg" alt="">
+          <div>Black dress 7 | Size L</div>
+          <figcaption>$23.48<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-24.jpg" alt="">
+          <div>White T-shirt with light blue trousers | Size M</div>
+          <figcaption>$33.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-25.jpg" alt="">
+          <div>Black & grey T-shirt with skirt | Size S</div>
+          <figcaption>$43.28<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-26.jpg" alt="">
+          <div>Blue T-shirt with long dark blue skirt | Size M</div>
+          <figcaption>$37.28<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/clo-27.jpg" alt="">
+          <div>White T-shirt with dark blue mini-skirt | Size M</div>
+          <figcaption>$39.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+      </section>
+      <!-- Bags -->
+      <h1 id="bags-heading" class="product-heading"> Handbags</h1>
+      <section id="bags" class="grid-product-cards">
+        <figure class="first">
+          <img src="./imgs/products/bags-1.jpg" alt="">
+          <div>Dark blue leather bag | Size S</div>
+          <figcaption>$23.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-2.jpg" alt="">
+          <div>Grey leather bag | Size S</div>
+          <figcaption>$33.56<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-3.jpg" alt="">
+          <div>Blue leather bag | Size S</div>
+          <figcaption>$33.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-4.jpg" alt="">
+          <div>Light blue leather bag | Size S</div>
+          <figcaption>$37.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-5.jpg" alt="">
+          <div>Black leather bag | Size S</div>
+          <figcaption>$52.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-6.jpg" alt="">
+          <div>Dark blue leather bag 1 | Size S</div>
+          <figcaption>$36.91<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-7.jpg" alt="">
+          <div>Pink leather bag | Size S</div>
+          <figcaption>$63.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-8.jpg" alt="">
+          <div>Golden leather bag | Size S</div>
+          <figcaption>$53.19<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-9.jpg" alt="">
+          <div>Black leather bag | Size S</div>
+          <figcaption>$28.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-10.jpg" alt="">
+          <div>Dark grey leather bag | Size S</div>
+          <figcaption>$45.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-11.jpg" alt="">
+          <div>White leather bag | Size M</div>
+          <figcaption>$38.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-12.jpg" alt="">
+          <div>Dark pink leather bag | Size S</div>
+          <figcaption>$33.79<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-13.jpg" alt="">
+          <div>Light blue leather bag 2| Size S</div>
+          <figcaption>$32.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-14.jpg" alt="">
+          <div>Black leather bag | Size L</div>
+          <figcaption>$43.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-15.jpg" alt="">
+          <div>Black silk bag | Size S</div>
+          <figcaption>$57.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-16.jpg" alt="">
+          <div>Pink leather bag | Size M</div>
+          <figcaption>$53.19<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-17.jpg" alt="">
+          <div>Dark grey leather bag | Size L</div>
+          <figcaption>$28.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-18.jpg" alt="">
+          <div>Black similise bag | Size S</div>
+          <figcaption>$45.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-19.jpg" alt="">
+          <div>Black leather bag | Size XS</div>
+          <figcaption>$38.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-20.jpg" alt="">
+          <div>Dark blue leather bag | Size S</div>
+          <figcaption>$43.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-21.jpg" alt="">
+          <div>Black leather bag 5| Size M</div>
+          <figcaption>$63.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-22.jpg" alt="">
+          <div>Blue leather bag 3 | Size S</div>
+          <figcaption>$43.91<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/bags-23.jpg" alt="">
+          <div>Black leather bag 8 | Size M</div>
+          <figcaption>$53.19<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+      </section>
+      <!-- Shoes -->
+      <h1 id="shoes-heading" class="product-heading"> Shoes</h1>
+      <section id="shoes" class="grid-product-cards">
+        <figure class="first">
+          <img src="./imgs/products/shoes-4.jpg" alt="">
+          <div>White & black flat shoes | Size 38</div>
+          <figcaption>$12.56<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-5.jpg" alt="">
+          <div>Dark blue platform shoes | Size 40</div>
+          <figcaption>$23.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-6.jpg" alt="">
+          <div>Black spike heel | Size 42</div>
+          <figcaption>$56.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-7.jpg" alt="">
+          <div>Silver spike heel | Size 39</div>
+          <figcaption>$25.98<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-8.jpg" alt="">
+          <div>Dark green sandal | Size 37</div>
+          <figcaption>$18.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-9.jpg" alt="">
+          <div>Golden spike heel | Size 38</div>
+          <figcaption>$43.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-10.jpg" alt="">
+          <div>Black spike heel | Size 40</div>
+          <figcaption>$35.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-11.jpg" alt="">
+          <div>White spike heel | Size 41</div>
+          <figcaption>$24.13<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-12.jpg" alt="">
+          <div>Grey spike heel | Size 42</div>
+          <figcaption>$23.48<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-13.jpg" alt="">
+          <div>Light grey spike heel | Size 38</div>
+          <figcaption>$43.18<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-14.jpg" alt="">
+          <div>Black spike heel | Size 40</div>
+          <figcaption>$33.87<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/shoes-15.jpg" alt="">
+          <div>Black slingback | Size 38</div>
+          <figcaption>$32.86<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+      </section>
+      <!-- Cosmetics -->
+      <h1 id="cosmetics-heading" class="product-heading"> Cosmetics</h1>
+      <section id="cosmetics" class="grid-product-cards">
+        <figure class="first">
+          <img src="./imgs/products/cosmetics-1.jpg" alt="">
+          <div>Cosmetics set 1 with 6 items</div>
+          <figcaption>$13.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/cosmetics-2.jpg" alt="">
+          <div>Cosmetics set 2 with 4 items</div>
+          <figcaption>$31.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/cosmetics-3.jpg" alt="">
+          <div>Cosmetics set 3 with 9 items</div>
+          <figcaption>$33.87<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/cosmetics-4.jpg" alt="">
+          <div>Cosmetics set 4 with 10 items</div>
+          <figcaption>$23.78<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+        <figure>
+          <img src="./imgs/products/cosmetics-5.jpg" alt="">
+          <div>Cosmetics special set 2018 with 30 items</div>
+          <figcaption>$139.89<button class="add" onclick="addToBag(this.parentElement)">Add to Bag</button></figcaption>
+        </figure>
+      </section>
+	</main>
+	<footer>
+		<section id="contact">
+			<h1>CONTACT US</h1>
+			<table>
+					<tr>
+						<td>Hours</td>
+						<td>everyday 9:30am to 9:30pm</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>59/43 Phan Dinh Phung Street, Quang Vinh, Bien Hoa, Dong Nai, Vietnam</td>
+					</tr>
+					<tr>
+						<td>Mobile</td>
+						<td>+84 868 052 304</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>cimobienhoa@gmail.com</td>
+					</tr>
+				</table>
+		</section>
+		<section id="social">
+			<h1>FOLLOW US</h1>
+			<p>Follow us on social media for instantly access to sales and new arrivals.</p>
+			<a href="https://www.facebook.com/cimobienhoa/"><img src="./imgs/fb-icon.png" alt="Facebook icon from http://damienjohnsonballet.com"></a>
+			<a href="https://www.instagram.com/explore/tags/cimobienhoa/?hl=en"> <img src="./imgs/insta-icon.png" alt="Instagram icon from http://damienjohnsonballet.com"> </a>
+		</section>
+		<section id="consign">
+			<h1>CONSIGN WITH US</h1>
+			<p>Best deal in town. Simpliest procedure. Receive 70% of each item’s sale price.</p>
+			<a href="./consign.html">CONSIGN</a>
+		</section>
+		<h4>&copy;2018 CIMO</h4>
+	</footer>
+</body>
+</html>

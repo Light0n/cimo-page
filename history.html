@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./imgs/cimo-icon.jpg">
+  <script src="./utils.js" defer></script>
+  <script src="./project.js" defer></script>
+	<title>CIMO | Order Form</title>
+</head>
+
+<body>
+		<header>
+				<a href="./home.html" id="logo"></a>
+				<nav id="navbar">
+						  <a href="#" id="menu-icon"></a>
+				  <ul>
+					<li><a href="./home.html">Home</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li class="submenu"><a href="./products.html">Products</a>
+					  <div class="submenu-content">
+									  <a href="./products.html#clothing-heading">Clothing</a>
+									  <a href="./products.html#bags-heading">Handbags</a>
+									  <a href="./products.html#shoes-heading">Shoes</a>
+									  <a href="./products.html#cosmetics-heading">Cosmestics</a>
+								  </div>
+					</li>
+          <li><a href="./consign.html">Consign</a></li>
+          <li><a href="./changes.html"> Changes</a></li>
+          <li><a href="./order_form.html" id="nav-bag"> <img src="./imgs/cart-icon.png" alt=""><sup>0</sup></a></li>
+          <li><a href="./history.html"> Transactions</a></li>
+				  </ul>
+				</nav>
+			  </header>
+	<main id="history">
+		<form action="./history.html" id="search-form">
+      <input type="text" name="username" id="search" placeholder="Enter username to search purchased history">
+      <input type="submit" value="Search" id="btnSearch">
+    </form>
+    <table id="history-table" class="table-item-list">
+      <caption>Purchased history of <b>nvdhau</b></caption>
+      <thead>
+        <tr>
+          <th>Purchased date</th>
+          <th>Purchased items</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21:32:36 11/04/2018</td>
+          <td>10</td>
+          <td>$423.45</td>
+        </tr>
+        <tr>
+          <td>21:32:36 11/04/2018</td>
+          <td>10</td>
+          <td>$423.45</td>
+        </tr>
+        <tr>
+          <td colspan="3">In total, you have spent <b>$21214.32</b> with us</td>
+        </tr>
+      </tbody>
+    </table>
+	</main>
+
+	<footer>
+		<section id="contact">
+			<h1>CONTACT US</h1>
+			<table>
+				<tr>
+					<td>Hours</td>
+					<td>everyday 9:30am to 9:30pm</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>59/43 Phan Dinh Phung Street, Quang Vinh, Bien Hoa, Dong Nai, Vietnam</td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td>+84 868 052 304</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>cimobienhoa@gmail.com</td>
+				</tr>
+			</table>
+		</section>
+		<section id="social">
+			<h1>FOLLOW US</h1>
+			<p>Follow us on social media for instantly access to sales and new arrivals.</p>
+			<a href="https://www.facebook.com/cimobienhoa/"><img src="./imgs/fb-icon.png" alt="Facebook icon from http://damienjohnsonballet.com"></a>
+			<a href="https://www.instagram.com/explore/tags/cimobienhoa/?hl=en"> <img src="./imgs/insta-icon.png" alt="Instagram icon from http://damienjohnsonballet.com"> </a>
+		</section>
+		<section id="consign">
+			<h1>CONSIGN WITH US</h1>
+			<p>Best deal in town. Simpliest procedure. Receive 70% of each item’s sale price.</p>
+			<a href="./consign.html">CONSIGN</a>
+		</section>
+		<h4>&copy;2018 CIMO</h4>
+	</footer>
+</body>
+
+</html>

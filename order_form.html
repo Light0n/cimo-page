@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./imgs/cimo-icon.jpg">
+	<script src="./utils.js" defer></script>
+	<script src="./project.js" defer></script>
+	<title>CIMO | Order Form</title>
+</head>
+
+<body>
+		<header>
+				<a href="./home.html" id="logo"></a>
+				<nav id="navbar">
+						  <a href="#" id="menu-icon"></a>
+				  <ul>
+					<li><a href="./home.html">Home</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li class="submenu"><a href="./products.html">Products</a>
+					  <div class="submenu-content">
+									  <a href="./products.html#clothing-heading">Clothing</a>
+									  <a href="./products.html#bags-heading">Handbags</a>
+									  <a href="./products.html#shoes-heading">Shoes</a>
+									  <a href="./products.html#cosmetics-heading">Cosmestics</a>
+								  </div>
+					</li>
+          <li><a href="./consign.html">Consign</a></li>
+          <li><a href="./changes.html"> Changes</a></li>
+          <li><a href="./order_form.html" id="nav-bag"> <img src="./imgs/cart-icon.png" alt=""><sup>0</sup></a></li>
+          <li><a href="./history.html"> Transactions</a></li>
+				  </ul>
+				</nav>
+			  </header>
+	<main id="order-form">
+		<form action="./" method="GET" id="form-order">
+			<div class="tab">
+				<button type="button" class="tabBtn" id="customer-bag-tab">Your bag</button>
+				<button type="button" class="tabBtn" id="customer-info-tab">Your information</button>
+				<button type="button" class="tabBtn" id="check-out-tab">Check out</button>	
+			</div>
+			<div id="customer-bag" class="tab-content">
+				<table id="item-list-table" class="table-item-list">
+					<thead>
+						<tr>
+							<th class="col-6">Product description</th>
+							<th class="col-2">Price</th>
+							<th class="col-2">Quantity</th>
+						</tr>
+					</thead>
+				</table>
+				<p id="subtotal">
+				
+				</p>
+				<div class="form-action">
+					<input class="btn-form right" type="button" value="Next">
+				</div>
+			</div>
+
+			<div id="customer-info" class="tab-content">
+				<fieldset>
+					<legend>Customer information</legend>
+					<div class="form-group">
+						<label for="first-name">First name: </label>
+						<input class="form-control" type="text" id="first-name" name="firstName" required>
+					</div>
+					<div class="form-group">
+						<label for="last-name">Last name: </label>
+						<input class="form-control" type="text" id="last-name" name="lastName" required>
+					</div>
+					<div class="form-group">
+						<label for="username">User name: </label>
+						<input class="form-control" type="text" id="username" name="username" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email: </label>
+						<input class="form-control" type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone number: </label>
+						<input class="form-control" type="tel" id="phone" name="phone" required maxlength="10" pattern="[0-9]{10}" title="Enter your 10 digits phone number">					
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Shipping information</legend>
+					<div class="form-group">
+						<label for="country">Country</label>
+						<select name="country" id="country" class="form-control">
+							<option value="Canada">Canda</option>		
+							<option value="United State">United States</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="address">Street address: </label>
+						<input class="form-control" type="text" id="address" name="address" required>
+					</div>
+					<div class="form-group">
+						<label for="city">City: </label>
+						<input class="form-control" type="text" id="city" name="city" required>
+					</div>
+					<div class="form-group">
+						<label for="province">Province/State: </label>
+						<select name="province" id="province" class="form-control">
+						
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="postal">Postal/Zip code: </label>
+						<input class="form-control" type="text" id="postal" name="postal" maxlength="6" required>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Payment method</legend>
+					<div class="form-group">
+						<label for="card-type">Type</label>
+						<select class="form-control" name="cardType" id="card-type">
+							<option value="visa">VISA</option>
+							<option value="mastercard">Mastercard</option>
+							<option value="amex">American Express</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="name-on-card">Name on card</label>
+						<input class="form-control" type="text" id="name-on-card" name="nameOnCard">
+					</div>
+					<div class="form-group">
+						<label for="card-number">Card number</label>
+						<input class="form-control" type="tel" id="card-number" name="cardNumber" required maxlength="16" pattern="[0-9]{16}" title="Enter your 16 digit credit card number">
+					</div>
+					<div class="form-group">
+						<label>Expiration date</label>
+						<div>
+							<select class="form-control" name="expireMonth" id="expire-month">
+						
+							</select>
+							<select class="form-control" name="expireYear" id="expire-year">
+								
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="cvd">CVD number</label>
+						<input class="form-control" type="tel" id="cvd" required  pattern="([0-9]{3}|[0-9]{4})" maxlength="4" title="Enter your 3 or 4 digit credit card verification number">
+					</div>
+					</fieldset>
+					<div class="form-action">
+						<input type="button" class="btn-form" value="Previous">
+						<input class="btn-form right" type="button" value="Next">
+					</div>
+			</div>
+			
+			<div id="check-out" class="tab-content">
+				<div id="check-out-container">
+					<div id="shipping-address">
+						<h4>Shipping address</h4>
+						<img src="./imgs/shippingaddress.png" alt="http://freebackgroundcheck.org" style="width:150px;">
+						<p>
+							Vu Duy Hau Nguyen <br/>
+							5680 Camino Court <br/>
+							Burnaby, British Columbia<br/>
+							Canada<br/>
+							Postal: V5G 3Y2<br/>
+							Phone: 7786823378
+						</p>
+					</div>
+					<div id="payment-method">
+						<h4>Payment method</h4>
+						<img style="width: 150px;" src="./imgs/amex.png" alt="icon from iconfinder.com"> 
+						<p>
+							Number: xxxx-xxxx-xxxx-1234<br/> 
+							Expiration: September/2018  
+						</p>
+					</div>
+					<div id="order-summary">
+						
+					</div>
+				</div>
+				
+				<table id="purchased-list-table" class="table-item-list">
+					
+				</table>
+				<div class="form-action">
+					<input type="button" class="btn-form" value="Previous">
+				</div>
+			</div>
+		</form>
+	</main>
+
+	<footer>
+		<section id="contact">
+			<h1>CONTACT US</h1>
+			<table>
+				<tr>
+					<td>Hours</td>
+					<td>everyday 9:30am to 9:30pm</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>59/43 Phan Dinh Phung Street, Quang Vinh, Bien Hoa, Dong Nai, Vietnam</td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td>+84 868 052 304</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>cimobienhoa@gmail.com</td>
+				</tr>
+			</table>
+		</section>
+		<section id="social">
+			<h1>FOLLOW US</h1>
+			<p>Follow us on social media for instantly access to sales and new arrivals.</p>
+			<a href="https://www.facebook.com/cimobienhoa/"><img src="./imgs/fb-icon.png" alt="Facebook icon from http://damienjohnsonballet.com"></a>
+			<a href="https://www.instagram.com/explore/tags/cimobienhoa/?hl=en"> <img src="./imgs/insta-icon.png" alt="Instagram icon from http://damienjohnsonballet.com"> </a>
+		</section>
+		<section id="consign">
+			<h1>CONSIGN WITH US</h1>
+			<p>Best deal in town. Simpliest procedure. Receive 70% of each item’s sale price.</p>
+			<a href="./consign.html">CONSIGN</a>
+		</section>
+		<h4>&copy;2018 CIMO</h4>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+/* banner */
+.banner{
+	position: relative;
+	height: 500px;
+	margin-bottom: 20px;
+	background-size: cover;
+	text-shadow: 1px 1px 10px #555;
+}
+.banner-p-bot{
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	padding-right: 30px;
+	margin-bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	padding: 20px;
+	border-radius: 10px;
+}   
+.banner a, strong{
+	font-size: 3em;
+	line-height: 0.8;
+	text-decoration: none;
+	color: #2262AD;
+	line-height: .9;
+	font-weight: bold;
+}
+.banner a:hover{
+	color: #4C9CF1;
+}
+.banner-text{
+	display: block;
+	margin-top: 10px;
+	font-size: 1.5em;
+	line-height: 1.1;
+	color: rgb(223, 203, 23);
+}
+#banner-home{
+	background: url("./imgs/banner.jpg") center;
+}
+/* banner end */
+
+/* grid-2col-category in homepage*/
+@media (min-width: 640px) {
+	.grid-2col{
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5px 10px;
+	}
+}
+#category-home figure{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+#category-home img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+#category-home figcaption{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 2em;
+}
+#category-home a{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+	font-weight: bold;
+	border: solid black 2px;
+	padding: 10px 15px;
+}
+#category-home a:hover{
+	background-color: black;
+	color: white;
+}
+/* grid-2col-category in homepage end */
+/* consign start */
+#banner-consign{
+	background: url("./imgs/consign.jpg") center;      
+}
+.step{
+    /* border: solid 2px black;  */
+	text-align: center;
+}
+.step img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50px;
+}
+.flex-container{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#booking-btn {
+		display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 2em;
+		font-weight: bold;
+		border: solid 2px black;
+		background-color: white;
+		color: black;
+		margin-bottom: 10px;
+}
+#booking-btn:hover{
+    color: white;
+    background-color: black;
+}
+/* consign end */
+/* about start */
+#banner-about{
+	background: url("./imgs/about.jpg") center;      
+}
+#banner-about p{
+	width: 50%;
+}
+
+.feature{
+	/* border: solid 2px black;  */
+text-align: center;
+}
+.feature img{
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 50px;
+}
+/* about end */
+/* products start */
+.grid-product-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 10px 10px;
+}
+.grid-product-cards figure{
+	overflow: hidden;
+	position: relative;
+}
+.grid-product-cards img{
+	width: 100%;
+	object-fit: cover;
+}
+.grid-product-cards img:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.grid-product-cards  figcaption{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin: 0;
+	padding: 5px 0 10px 10px;
+	/* margin-bottom: 5px; */
+	background-color: rgba(255, 255, 255, 0.5);
+	font-size: 1em;
+}
+.grid-product-cards  figure div{
+	width: 100%;
+	position: absolute;
+	bottom: 35px;
+	color: #222;
+	padding-left: 5px;
+	white-space: nowrap;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.grid-product-cards button{
+	position: absolute;
+	color: black;
+	font-size: .9em;
+	font-weight: bold;
+	border: solid black 1px;
+	padding: 5px 10px;
+	right:5px;
+	bottom: 5px;
+}
+.grid-product-cards button:hover{
+	background-color: black;
+	cursor: pointer;
+	color: white;
+}
+/* products end */
